@@ -70,7 +70,50 @@
         "timeStamp": "2024-05-24T20:58:15.268Z"
       }
     ],
-    "events": [],
+    "events": [
+      {
+        "id": 1,
+        "event": "Rusty's 21st",
+        "date": "2024-08-15",
+        "location": "Rusty Sr's Backyard",
+        "userId": 5
+      },
+      {
+        "id": 2,
+        "event": "Family Reunion",
+        "date": "2024-09-12",
+        "location": "Rust's Family Ranch",
+        "userId": 4
+      },
+      {
+        "id": 3,
+        "event": "Murder Mystery Mayhem",
+        "date": "2024-07-05",
+        "location": "The cave",
+        "userId": 3
+      },
+      {
+        "id": 4,
+        "event": "Foraging Hike",
+        "date": "2024-11-25",
+        "location": "The woods",
+        "userId": 2
+      },
+      {
+        "id": 5,
+        "event": "Bridgerton Marathon",
+        "date": "2024-07-20",
+        "location": "Drive in",
+        "userId": 1
+      },
+      {
+        "id": 6,
+        "event": "Winery Tour",
+        "date": "2024-08-22",
+        "location": "The vineyard",
+        "userId": 6
+      }
+    ],
     "tasks": [],
     "images": [],
     "friends": []
