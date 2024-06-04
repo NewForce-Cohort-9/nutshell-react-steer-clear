@@ -1,5 +1,36 @@
 {
-    "users": [],
+  "users": [
+    {
+      "id": 1, 
+      "username": "RustonSr",
+      "email": "rustonsr@nutshell.com"
+    },
+    {
+      "id": 2, 
+      "username": "RustonII",
+      "email": "rustonii@nutshell.com"
+    },
+    {
+      "id": 3, 
+      "username": "RustonJr",
+      "email": "rustonjr@nutshell.com"
+    },
+    {
+      "id": 4, 
+      "username": "Rust",
+      "email": "rust@nutshell.com"
+    },
+    {
+      "id": 5, 
+      "username": "Rusty",
+      "email": "rusty@nutshell.com"
+    },
+    {
+      "id": 6, 
+      "username": "Ruston",
+      "email": "ruston@nutshell.com"
+    }
+  ],
     "articles": [
       {
       "id": 1,
@@ -50,41 +81,6 @@
         "link": "https://www.nhm.ac.uk/discover/pond-life-facts-about-habitats-plants-animals.html"
       }
     ],
-    "messages": [],
-    "events": [],
-    "users": [
-      {
-        "id": 1, 
-        "username": "RustonSr",
-        "email": "rustonsr@nutshell.com"
-      },
-      {
-        "id": 2, 
-        "username": "RustonII",
-        "email": "rustonii@nutshell.com"
-      },
-      {
-        "id": 3, 
-        "username": "RustonJr",
-        "email": "rustonjr@nutshell.com"
-      },
-      {
-        "id": 4, 
-        "username": "Rust",
-        "email": "rust@nutshell.com"
-      },
-      {
-        "id": 5, 
-        "username": "Rusty",
-        "email": "rusty@nutshell.com"
-      },
-      {
-        "id": 6, 
-        "username": "Ruston",
-        "email": "ruston@nutshell.com"
-      }
-    ],
-    "articles": [],
     "messages": [
       {
         "id": 1,
