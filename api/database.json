@@ -1,4 +1,57 @@
 {
+    "users": [],
+    "articles": [
+      {
+      "id": 1,
+      "title": "A dragon ate my neighbor's cow??",
+      "date": "5/30/2024",
+      "link": "https://www.discovermagazine.com/the-sciences/the-mysterious-origin-of-dragons"
+      },
+      {
+        "id": 2,
+        "title": "Yesterday was not cool bro.",
+        "date": "6/3/2024",
+        "link": "https://www.buzzfeed.com/marycolussi/embarrassing-first-day-of-work-stories"
+      },
+      {
+        "id": 3,
+        "title": "An afternoon without cheddar cheese :(",
+        "date": "6/3/2024",
+        "link": "https://www.wisconsincheese.com/the-cheese-life/article/104/cheddar-cheese"
+      },
+      {
+        "id": 4,
+        "title": "help I think I'm in love with a government drone",
+        "date":"5/29/2024",
+        "link": "https://www.popsci.com/article/technology/25-reasons-love-drones/"
+      },
+      {
+        "id": 5,
+        "title": "My pasta salad got up and walked away??",
+        "date": "6/1/2024",
+        "link": "https://www.food.com/recipe/perfect-pasta-salad-27221"
+      },
+      {
+        "id": 6,
+        "title": "cat pics!!!!",
+        "date": "6/3/2024",
+        "link": "https://azphotoalliance.org/cat-photos-before-the-internet/"
+      },
+      {
+        "id": 7,
+        "title": "My house is haunted but he is a polite ghost",
+        "date": "6/3/2024",
+        "link": "https://www.refinery29.com/en-us/friendly-ghost-stories-hauntings"
+      },
+      {
+        "id": 8,
+        "title": "Proof that a pond is just a big soup outside.",
+        "date": "3/5/2024",
+        "link": "https://www.nhm.ac.uk/discover/pond-life-facts-about-habitats-plants-animals.html"
+      }
+    ],
+    "messages": [],
+    "events": [],
     "users": [
       {
         "id": 1, 
