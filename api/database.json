@@ -1,247 +1,243 @@
 {
-    "users": [],
-    "articles": [
-      {
+  "users": [
+    {
+      "id": 1, 
+      "username": "RustonSr",
+      "email": "rustonsr@nutshell.com"
+    },
+    {
+      "id": 2, 
+      "username": "RustonII",
+      "email": "rustonii@nutshell.com"
+    },
+    {
+      "id": 3, 
+      "username": "RustonJr",
+      "email": "rustonjr@nutshell.com"
+    },
+    {
+      "id": 4, 
+      "username": "Rust",
+      "email": "rust@nutshell.com"
+    },
+    {
+      "id": 5, 
+      "username": "Rusty",
+      "email": "rusty@nutshell.com"
+    },
+    {
+      "id": 6, 
+      "username": "Ruston",
+      "email": "ruston@nutshell.com"
+    }
+  ],
+  "articles": [
+    {
+    "id": 1,
+    "title": "A dragon ate my neighbor's cow??",
+    "date": "5/30/2024",
+    "link": "https://www.discovermagazine.com/the-sciences/the-mysterious-origin-of-dragons"
+    },
+    {
+      "id": 2,
+      "title": "Yesterday was not cool bro.",
+      "date": "6/3/2024",
+      "link": "https://www.buzzfeed.com/marycolussi/embarrassing-first-day-of-work-stories"
+    },
+    {
+      "id": 3,
+      "title": "An afternoon without cheddar cheese :(",
+      "date": "6/3/2024",
+      "link": "https://www.wisconsincheese.com/the-cheese-life/article/104/cheddar-cheese"
+    },
+    {
+      "id": 4,
+      "title": "help I think I'm in love with a government drone",
+      "date":"5/29/2024",
+      "link": "https://www.popsci.com/article/technology/25-reasons-love-drones/"
+    },
+    {
+      "id": 5,
+      "title": "My pasta salad got up and walked away??",
+      "date": "6/1/2024",
+      "link": "https://www.food.com/recipe/perfect-pasta-salad-27221"
+    },
+    {
+      "id": 6,
+      "title": "cat pics!!!!",
+      "date": "6/3/2024",
+      "link": "https://azphotoalliance.org/cat-photos-before-the-internet/"
+    },
+    {
+      "id": 7,
+      "title": "My house is haunted but he is a polite ghost",
+      "date": "6/3/2024",
+      "link": "https://www.refinery29.com/en-us/friendly-ghost-stories-hauntings"
+    },
+    {
+      "id": 8,
+      "title": "Proof that a pond is just a big soup outside.",
+      "date": "3/5/2024",
+      "link": "https://www.nhm.ac.uk/discover/pond-life-facts-about-habitats-plants-animals.html"
+    }
+  ],
+  "messages": [
+    {
       "id": 1,
-      "title": "A dragon ate my neighbor's cow??",
-      "date": "5/30/2024",
-      "link": "https://www.discovermagazine.com/the-sciences/the-mysterious-origin-of-dragons"
-      },
-      {
-        "id": 2,
-        "title": "Yesterday was not cool bro.",
-        "date": "6/3/2024",
-        "link": "https://www.buzzfeed.com/marycolussi/embarrassing-first-day-of-work-stories"
-      },
-      {
-        "id": 3,
-        "title": "An afternoon without cheddar cheese :(",
-        "date": "6/3/2024",
-        "link": "https://www.wisconsincheese.com/the-cheese-life/article/104/cheddar-cheese"
-      },
-      {
-        "id": 4,
-        "title": "help I think I'm in love with a government drone",
-        "date":"5/29/2024",
-        "link": "https://www.popsci.com/article/technology/25-reasons-love-drones/"
-      },
-      {
-        "id": 5,
-        "title": "My pasta salad got up and walked away??",
-        "date": "6/1/2024",
-        "link": "https://www.food.com/recipe/perfect-pasta-salad-27221"
-      },
-      {
-        "id": 6,
-        "title": "cat pics!!!!",
-        "date": "6/3/2024",
-        "link": "https://azphotoalliance.org/cat-photos-before-the-internet/"
-      },
-      {
-        "id": 7,
-        "title": "My house is haunted but he is a polite ghost",
-        "date": "6/3/2024",
-        "link": "https://www.refinery29.com/en-us/friendly-ghost-stories-hauntings"
-      },
-      {
-        "id": 8,
-        "title": "Proof that a pond is just a big soup outside.",
-        "date": "3/5/2024",
-        "link": "https://www.nhm.ac.uk/discover/pond-life-facts-about-habitats-plants-animals.html"
-      }
-    ],
-    "messages": [],
-    "events": [],
-    "users": [
-      {
-        "id": 1, 
-        "username": "RustonSr",
-        "email": "rustonsr@nutshell.com"
-      },
-      {
-        "id": 2, 
-        "username": "RustonII",
-        "email": "rustonii@nutshell.com"
-      },
-      {
-        "id": 3, 
-        "username": "RustonJr",
-        "email": "rustonjr@nutshell.com"
-      },
-      {
-        "id": 4, 
-        "username": "Rust",
-        "email": "rust@nutshell.com"
-      },
-      {
-        "id": 5, 
-        "username": "Rusty",
-        "email": "rusty@nutshell.com"
-      },
-      {
-        "id": 6, 
-        "username": "Ruston",
-        "email": "ruston@nutshell.com"
-      }
-    ],
-    "articles": [],
-    "messages": [
-      {
-        "id": 1,
-        "userId": 1,
-        "message": "Hi, I'm Ruston Sr!",
-        "timeStamp": "2024-05-24T19:56:15.268Z"
-      },
-      {
-        "id": 2,
-        "userId": 2,
-        "message": "Hi, I'm Ruston II",
-        "timeStamp": "2024-05-24T19:57:15.268Z"
-      },
-      {
-        "id": 3,
-        "userId": 3,
-        "message": "Hello, I'm Ruston Jr",
-        "timeStamp": "2024-05-24T19:58:15.268Z"
-      },
-      {
-        "id": 4,
-        "userId": 4,
-        "message": "Hey guys! I'm Rust!",
-        "timeStamp": "2024-05-24T19:59:15.268Z"
-      },
-      {
-        "id": 5,
-        "userId": 5,
-        "message": "This is Rusty!",
-        "timeStamp": "2024-05-24T20:56:15.268Z"
-      },
-      {
-        "id": 6,
-        "userId": 6,
-        "message": "Hey I'm Ruston!",
-        "timeStamp": "2024-05-24T20:58:15.268Z"
-      }
-    ],
-    "events": [
-      {
-        "id": 1,
-        "event": "Rusty's 21st",
-        "date": "2024-08-15",
-        "location": "Rusty Sr's Backyard",
-        "userId": 5
-      },
-      {
-        "id": 2,
-        "event": "Family Reunion",
-        "date": "2024-09-12",
-        "location": "Rust's Family Ranch",
-        "userId": 4
-      },
-      {
-        "id": 3,
-        "event": "Murder Mystery Mayhem",
-        "date": "2024-07-05",
-        "location": "The cave",
-        "userId": 3
-      },
-      {
-        "id": 4,
-        "event": "Foraging Hike",
-        "date": "2024-11-25",
-        "location": "The woods",
-        "userId": 2
-      },
-      {
-        "id": 5,
-        "event": "Bridgerton Marathon",
-        "date": "2024-07-20",
-        "location": "Drive in",
-        "userId": 1
-      },
-      {
-        "id": 6,
-        "event": "Winery Tour",
-        "date": "2024-08-22",
-        "location": "The vineyard",
-        "userId": 6
-      }
-    ],
-    "tasks": [
-      {
-        "id": 1,
-        "userId": 6,
-        "task": "Feed Snuffy-Wuffagus",
-        "dateToComplete": "June 20",
-        "completed": false
-      },{
-        "id": 2,
-        "userId": 6,
-        "task": "Buy larger food bowl for my Snuffums",
-        "dateToComplete": "June 21",
-        "completed": false
-      },{
-        "id": 3,
-        "userId": 5,
-        "task": "Fix mountain bike",
-        "dateToComplete": "july 2",
-        "completed": false
-      },{
-        "id": 4,
-        "userId": 5,
-        "task": "Go on a trail ride with friends",
-        "dateToComplete": "July 4",
-        "completed": false
-      },{
-        "id": 5,
-        "userId": 4,
-        "task": "Learn how to make poffertjes",
-        "dateToComplete": "June 25",
-        "completed": false
-      },{
-        "id": 6,
-        "userId": 4,
-        "task": "Eat a lot of poffertjes",
-        "dateToComplete": "June 25",
-        "completed": false
-      },{
-        "id": 7,
-        "userId": 3,
-        "task": "Learn to golf",
-        "dateToComplete": "May 17",
-        "completed": false
-      },{
-        "id": 8,
-        "userId": 3,
-        "task": "Destroy best friend in a golf game",
-        "dateToComplete": "August 1",
-        "completed": false
-      },{
-        "id": 9,
-        "userId": 2,
-        "task": "Get a job",
-        "dateToComplete": "November 1",
-        "completed": false
-      },{
-        "id": 10,
-        "userId": 2,
-        "task": "Quit my next job before Coachella",
-        "dateToComplete": "May 30",
-        "completed": false
-      },{
-        "id": 11,
-        "userId": 1,
-        "task": "Learn Japanese",
-        "dateToComplete": "August 20",
-        "completed": false
-      },{
-        "id": 12,
-        "userId": 1,
-        "task": "Take my next holiday in Kyoto",
-        "dateToComplete": "September 5",
-        "completed": false
-      }
-    ],
-    "images": [],
-    "friends": []
-  }
+      "userId": 1,
+      "message": "Hi, I'm Ruston Sr!",
+      "timeStamp": "2024-05-24T19:56:15.268Z"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "message": "Hi, I'm Ruston II",
+      "timeStamp": "2024-05-24T19:57:15.268Z"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "message": "Hello, I'm Ruston Jr",
+      "timeStamp": "2024-05-24T19:58:15.268Z"
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "message": "Hey guys! I'm Rust!",
+      "timeStamp": "2024-05-24T19:59:15.268Z"
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "message": "This is Rusty!",
+      "timeStamp": "2024-05-24T20:56:15.268Z"
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "message": "Hey I'm Ruston!",
+      "timeStamp": "2024-05-24T20:58:15.268Z"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "event": "Rusty's 21st",
+      "date": "2024-08-15",
+      "location": "Rusty Sr's Backyard",
+      "userId": 5
+    },
+    {
+      "id": 2,
+      "event": "Family Reunion",
+      "date": "2024-09-12",
+      "location": "Rust's Family Ranch",
+      "userId": 4
+    },
+    {
+      "id": 3,
+      "event": "Murder Mystery Mayhem",
+      "date": "2024-07-05",
+      "location": "The cave",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "event": "Foraging Hike",
+      "date": "2024-11-25",
+      "location": "The woods",
+      "userId": 2
+    },
+    {
+      "id": 5,
+      "event": "Bridgerton Marathon",
+      "date": "2024-07-20",
+      "location": "Drive in",
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "event": "Winery Tour",
+      "date": "2024-08-22",
+      "location": "The vineyard",
+      "userId": 6
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "userId": 6,
+      "task": "Feed Snuffy-Wuffagus",
+      "dateToComplete": "June 20",
+      "completed": false
+    },{
+      "id": 2,
+      "userId": 6,
+      "task": "Buy larger food bowl for my Snuffums",
+      "dateToComplete": "June 21",
+      "completed": false
+    },{
+      "id": 3,
+      "userId": 5,
+      "task": "Fix mountain bike",
+      "dateToComplete": "july 2",
+      "completed": false
+    },{
+      "id": 4,
+      "userId": 5,
+      "task": "Go on a trail ride with friends",
+      "dateToComplete": "July 4",
+      "completed": false
+    },{
+      "id": 5,
+      "userId": 4,
+      "task": "Learn how to make poffertjes",
+      "dateToComplete": "June 25",
+      "completed": false
+    },{
+      "id": 6,
+      "userId": 4,
+      "task": "Eat a lot of poffertjes",
+      "dateToComplete": "June 25",
+      "completed": false
+    },{
+      "id": 7,
+      "userId": 3,
+      "task": "Learn to golf",
+      "dateToComplete": "May 17",
+      "completed": false
+    },{
+      "id": 8,
+      "userId": 3,
+      "task": "Destroy best friend in a golf game",
+      "dateToComplete": "August 1",
+      "completed": false
+    },{
+      "id": 9,
+      "userId": 2,
+      "task": "Get a job",
+      "dateToComplete": "November 1",
+      "completed": false
+    },{
+      "id": 10,
+      "userId": 2,
+      "task": "Quit my next job before Coachella",
+      "dateToComplete": "May 30",
+      "completed": false
+    },{
+      "id": 11,
+      "userId": 1,
+      "task": "Learn Japanese",
+      "dateToComplete": "August 20",
+      "completed": false
+    },{
+      "id": 12,
+      "userId": 1,
+      "task": "Take my next holiday in Kyoto",
+      "dateToComplete": "September 5",
+      "completed": false
+    }
+  ],
+  "images": [],
+  "friends": []
+}
