@@ -1,8 +1,119 @@
 {
-    "users": [],
+    "users": [
+      {
+        "id": 1, 
+        "username": "RustonSr",
+        "email": "rustonsr@nutshell.com"
+      },
+      {
+        "id": 2, 
+        "username": "RustonII",
+        "email": "rustonii@nutshell.com"
+      },
+      {
+        "id": 3, 
+        "username": "RustonJr",
+        "email": "rustonjr@nutshell.com"
+      },
+      {
+        "id": 4, 
+        "username": "Rust",
+        "email": "rust@nutshell.com"
+      },
+      {
+        "id": 5, 
+        "username": "Rusty",
+        "email": "rusty@nutshell.com"
+      },
+      {
+        "id": 6, 
+        "username": "Ruston",
+        "email": "ruston@nutshell.com"
+      }
+    ],
     "articles": [],
-    "messages": [],
-    "events": [],
+    "messages": [
+      {
+        "id": 1,
+        "userId": 1,
+        "message": "Hi, I'm Ruston Sr!",
+        "timeStamp": "2024-05-24T19:56:15.268Z"
+      },
+      {
+        "id": 2,
+        "userId": 2,
+        "message": "Hi, I'm Ruston II",
+        "timeStamp": "2024-05-24T19:57:15.268Z"
+      },
+      {
+        "id": 3,
+        "userId": 3,
+        "message": "Hello, I'm Ruston Jr",
+        "timeStamp": "2024-05-24T19:58:15.268Z"
+      },
+      {
+        "id": 4,
+        "userId": 4,
+        "message": "Hey guys! I'm Rust!",
+        "timeStamp": "2024-05-24T19:59:15.268Z"
+      },
+      {
+        "id": 5,
+        "userId": 5,
+        "message": "This is Rusty!",
+        "timeStamp": "2024-05-24T20:56:15.268Z"
+      },
+      {
+        "id": 6,
+        "userId": 6,
+        "message": "Hey I'm Ruston!",
+        "timeStamp": "2024-05-24T20:58:15.268Z"
+      }
+    ],
+    "events": [
+      {
+        "id": 1,
+        "event": "Rusty's 21st",
+        "date": "2024-08-15",
+        "location": "Rusty Sr's Backyard",
+        "userId": 5
+      },
+      {
+        "id": 2,
+        "event": "Family Reunion",
+        "date": "2024-09-12",
+        "location": "Rust's Family Ranch",
+        "userId": 4
+      },
+      {
+        "id": 3,
+        "event": "Murder Mystery Mayhem",
+        "date": "2024-07-05",
+        "location": "The cave",
+        "userId": 3
+      },
+      {
+        "id": 4,
+        "event": "Foraging Hike",
+        "date": "2024-11-25",
+        "location": "The woods",
+        "userId": 2
+      },
+      {
+        "id": 5,
+        "event": "Bridgerton Marathon",
+        "date": "2024-07-20",
+        "location": "Drive in",
+        "userId": 1
+      },
+      {
+        "id": 6,
+        "event": "Winery Tour",
+        "date": "2024-08-22",
+        "location": "The vineyard",
+        "userId": 6
+      }
+    ],
     "tasks": [],
     "images": [],
     "friends": []
