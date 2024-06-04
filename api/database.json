@@ -1,7 +1,75 @@
 {
-    "users": [],
+    "users": [
+      {
+        "id": 1, 
+        "username": "Artemis",
+        "email": "arty@nutshell.com"
+      },
+      {
+        "id": 2, 
+        "username": "Bartholomew",
+        "email": "bart@nutshell.com"
+      },
+      {
+        "id": 3, 
+        "username": "Cletus",
+        "email": "clet@nutshell.com"
+      },
+      {
+        "id": 4, 
+        "username": "Dragomir",
+        "email": "dragon@nutshell.com"
+      },
+      {
+        "id": 5, 
+        "username": "Erasmus",
+        "email": "erasy@nutshell.com"
+      },
+      {
+        "id": 6, 
+        "username": "Fatimus",
+        "email": "fati@nutshell.com"
+      }
+    ],
     "articles": [],
-    "messages": [],
+    "messages": [
+      {
+        "id": 1,
+        "userId": 1,
+        "message": "Hi, I'm Artemis! I like to solve mysteries",
+        "timeStamp": "2024-05-24T19:56:15.268Z"
+      },
+      {
+        "id": 2,
+        "userId": 2,
+        "message": "Hi, I'm Bartholomew! Please call me Bart",
+        "timeStamp": "2024-05-24T19:57:15.268Z"
+      },
+      {
+        "id": 3,
+        "userId": 3,
+        "message": "Hello, I'm Cletus!!",
+        "timeStamp": "2024-05-24T19:58:15.268Z"
+      },
+      {
+        "id": 4,
+        "userId": 4,
+        "message": "Hey guys! I'm Dragomir!",
+        "timeStamp": "2024-05-24T19:59:15.268Z"
+      },
+      {
+        "id": 5,
+        "userId": 5,
+        "message": "This is Erasmus!",
+        "timeStamp": "2024-05-24T20:56:15.268Z"
+      },
+      {
+        "id": 6,
+        "userId": 6,
+        "message": "Hey I'm Fatimus!",
+        "timeStamp": "2024-05-24T20:58:15.268Z"
+      }
+    ],
     "events": [],
     "tasks": [],
     "images": [],
