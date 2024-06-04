@@ -3,7 +3,81 @@
     "articles": [],
     "messages": [],
     "events": [],
-    "tasks": [],
+    "tasks": [
+      {
+        "id": 1,
+        "userId": 6,
+        "task": "Feed Snuffy-Wuffagus",
+        "dateToComplete": "June 20",
+        "completed": false
+      },{
+        "id": 2,
+        "userId": 6,
+        "task": "Buy larger food bowl for my Snuffums",
+        "dateToComplete": "June 21",
+        "completed": false
+      },{
+        "id": 3,
+        "userId": 5,
+        "task": "Fix mountain bike",
+        "dateToComplete": "july 2",
+        "completed": false
+      },{
+        "id": 4,
+        "userId": 5,
+        "task": "Go on a trail ride with friends",
+        "dateToComplete": "July 4",
+        "completed": false
+      },{
+        "id": 5,
+        "userId": 4,
+        "task": "Learn how to make poffertjes",
+        "dateToComplete": "June 25",
+        "completed": false
+      },{
+        "id": 6,
+        "userId": 4,
+        "task": "Eat a lot of poffertjes",
+        "dateToComplete": "June 25",
+        "completed": false
+      },{
+        "id": 7,
+        "userId": 3,
+        "task": "Learn to golf",
+        "dateToComplete": "May 17",
+        "completed": false
+      },{
+        "id": 8,
+        "userId": 3,
+        "task": "Destroy best friend in a golf game",
+        "dateToComplete": "August 1",
+        "completed": false
+      },{
+        "id": 9,
+        "userId": 2,
+        "task": "Get a job",
+        "dateToComplete": "November 1",
+        "completed": false
+      },{
+        "id": 10,
+        "userId": 2,
+        "task": "Quit my next job before Coachella",
+        "dateToComplete": "May 30",
+        "completed": false
+      },{
+        "id": 11,
+        "userId": 1,
+        "task": "Learn Japanese",
+        "dateToComplete": "August 20",
+        "completed": false
+      },{
+        "id": 12,
+        "userId": 1,
+        "task": "Take my next holiday in Kyoto",
+        "dateToComplete": "September 5",
+        "completed": false
+      }
+    ],
     "images": [],
     "friends": []
   }
