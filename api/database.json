@@ -42,8 +42,10 @@
     },
     {
       "id": 2,
-      "title": "Yesterday was not cool bro.",
-      "date": "6/3/2024",
+      "userId": 2,
+      "title": "We Asked People About Their Most Embarrassing First Days Of Work — Here's What They Said",
+      "synopsis": "Yesterday was not cool bro.",
+      "timeStamp": "2024-05-24T19:56:15.268Z",
       "link": "https://www.buzzfeed.com/marycolussi/embarrassing-first-day-of-work-stories"
     },
     {
@@ -64,27 +66,107 @@
     },
     {
       "id": 5,
-      "title": "My pasta salad got up and walked away??",
-      "date": "6/1/2024",
+      "userId": 5,
+      "title": "PERFECT PASTA SALAD",
+      "synopsis": "My pasta salad got up and walked away??",
+      "timeStamp": "2024-05-24T19:56:15.268Z",
       "link": "https://www.food.com/recipe/perfect-pasta-salad-27221"
     },
     {
       "id": 6,
-      "title": "cat pics!!!!",
-      "date": "6/3/2024",
+      "userId": 6,
+      "title": "Cat Photos BEFORE the Internet",
+      "synopsis": "cat pics!!!!",
+      "timeStamp": "6/3/2024",
       "link": "https://azphotoalliance.org/cat-photos-before-the-internet/"
     },
     {
       "id": 7,
-      "title": "My house is haunted but he is a polite ghost",
-      "date": "6/3/2024",
+      "userId": 5,
+      "title": "Yes, There Really Is Such A Thing As A Friendly Ghost",
+      "synopsis": "My house is haunted but he is a polite ghost",
+      "timeStamp": "6/3/2024",
       "link": "https://www.refinery29.com/en-us/friendly-ghost-stories-hauntings"
     },
     {
       "id": 8,
-      "title": "Proof that a pond is just a big soup outside.",
-      "date": "3/5/2024",
+      "userId": 4,
+      "title": "Pond life: facts about pond habitats, plants and animals",
+      "synopsis": "Proof that a pond is just a big soup outside.",
+      "timeStamp": "3/5/2024",
       "link": "https://www.nhm.ac.uk/discover/pond-life-facts-about-habitats-plants-animals.html"
+    },
+    {
+      "userId": 1,
+      "title": "sdfg",
+      "synopsis": "sdfgs",
+      "timeStamp": "2024-06-05T15:50:32.258Z",
+      "link": "dfg",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "title": "sdfg",
+      "synopsis": "sdfgs",
+      "timeStamp": "2024-06-05T15:50:32.902Z",
+      "link": "dfg",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "title": "sdfg",
+      "synopsis": "sdfgs",
+      "timeStamp": "2024-06-05T15:50:33.063Z",
+      "link": "dfg",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "sdfg",
+      "synopsis": "sdfgs",
+      "timeStamp": "2024-06-05T15:50:33.228Z",
+      "link": "dfg",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "title": "sdfg",
+      "synopsis": "sdfgs",
+      "timeStamp": "2024-06-05T15:50:33.391Z",
+      "link": "dfg",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "title": "sdfg",
+      "synopsis": "sdfgs",
+      "timeStamp": "2024-06-05T15:50:33.553Z",
+      "link": "dfg",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "title": "sdfg",
+      "synopsis": "sdfgs",
+      "timeStamp": "2024-06-05T15:50:33.858Z",
+      "link": "dfg",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "title": "sdfg",
+      "synopsis": "sdfgs",
+      "timeStamp": "2024-06-05T15:50:34.012Z",
+      "link": "dfg",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "title": "sdfg",
+      "synopsis": "sdfgs",
+      "timeStamp": "2024-06-05T15:50:34.185Z",
+      "link": "dfg",
+      "id": 17
     }
   ],
   "messages": [
@@ -176,49 +258,57 @@
       "task": "Feed Snuffy-Wuffagus",
       "dateToComplete": "June 20",
       "completed": false
-    },{
+    },
+    {
       "id": 2,
       "userId": 6,
       "task": "Buy larger food bowl for my Snuffums",
       "dateToComplete": "June 21",
       "completed": false
-    },{
+    },
+    {
       "id": 3,
       "userId": 5,
       "task": "Fix mountain bike",
       "dateToComplete": "july 2",
       "completed": false
-    },{
+    },
+    {
       "id": 4,
       "userId": 5,
       "task": "Go on a trail ride with friends",
       "dateToComplete": "July 4",
       "completed": false
-    },{
+    },
+    {
       "id": 5,
       "userId": 4,
       "task": "Learn how to make poffertjes",
       "dateToComplete": "June 25",
       "completed": false
-    },{
+    },
+    {
       "id": 6,
       "userId": 4,
       "task": "Eat a lot of poffertjes",
       "dateToComplete": "June 25",
       "completed": false
-    },{
+    },
+    {
       "id": 7,
       "userId": 3,
       "task": "Learn to golf",
       "dateToComplete": "May 17",
       "completed": false
-    },{
+    },
+    {
       "id": 8,
       "userId": 3,
       "task": "Destroy best friend in a golf game",
       "dateToComplete": "August 1",
       "completed": false
-    },{
+    },
+    {
       "id": 9,
       "userId": 2,
       "task": "Get a job",
@@ -231,13 +321,15 @@
       "task": "Quit my next job before Coachella",
       "dateToComplete": "May 30",
       "completed": false
-    },{
+    },
+    {
       "id": 11,
       "userId": 1,
       "task": "Learn Japanese",
       "dateToComplete": "August 20",
       "completed": false
-    },{
+    },
+    {
       "id": 12,
       "userId": 1,
       "task": "Take my next holiday in Kyoto",
