@@ -3,16 +3,18 @@
 import { useEffect, useState } from "react"
 import { getAllArticles } from "../../services/articleService.jsx"
 import { Article } from "./Article.jsx"
-import { ArticleForm } from "./ArticleForm.jsx"
+import { useNavigate } from "react-router-dom"
 
 export const ArticleList = ({ currentUser } ) => {
     const [userArticles, setUserArticles] = useState([])
+
+    const navigate = useNavigate()
 
     //get articles for current user
     const getAndSetArticles = () => {
         getAllArticles().then((articlesArray) => {
             const userArticlesArray = articlesArray.filter(
-                article => article.userId === currentUser.id
+                article => article.userId === currentUser
             )
             setUserArticles(userArticlesArray)
         })
@@ -20,11 +22,11 @@ export const ArticleList = ({ currentUser } ) => {
 
     useEffect(()=> {
         getAndSetArticles()
-    }, [currentUser])
+    }, [currentUser, userArticles])
 
     return (
         <div className="articles-container">
-            <h2>Articles</h2>
+            <h2>News</h2>
             <article className="articles">
                 {userArticles.map(articleObj => {
                     return <Article
@@ -35,7 +37,14 @@ export const ArticleList = ({ currentUser } ) => {
                     />
                 })}
             </article>
-            <ArticleForm />
+            <button
+                    className="filter-btn btn-primary"
+                    onClick={() => {
+                        navigate("/articles/newarticle")
+                    }}
+                >
+                    New Article
+                </button>
         </div>
     )
 }

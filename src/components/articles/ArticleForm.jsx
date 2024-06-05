@@ -7,22 +7,23 @@ import { createArticle } from "../../services/articleService.jsx"
 export const ArticleForm = ({ currentUser }) => {
     const [article, setArticle] = useState({title: "", synopsis: "", link:""})
 
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
     const handleSave = (event) => {
         event.preventDefault()
 
         if (article.title && article.synopsis && article.link) {
             const newArticle = {
-                userId: 1,
+                userId: currentUser,
                 title: article.title,
                 synopsis: article.synopsis,
                 timeStamp: new Date(),
                 link: article.link,
             }
 
-            createArticle(newArticle)
-            // add .then to route back to articles page 
+            createArticle(newArticle).then(() => {
+                navigate("/articles")
+            })
         } else {
             window.alert("Please fill out all sections")
         }
