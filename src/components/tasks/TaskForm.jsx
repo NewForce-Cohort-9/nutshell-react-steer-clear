@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import "./Tasks.css"
 // import { getUserById, updateTask } from "../../services/userService.jsx"
 import { useNavigate } from "react-router-dom"
+import { createTask } from "../../services/taskService.jsx"
 
 export const TaskForm = ({ currentUser }) => {
     const [task, setTask] = useState({task: "", dateToComplete: ""})
@@ -18,26 +19,23 @@ export const TaskForm = ({ currentUser }) => {
 
     const handleSave = (event) => {
         event.preventDefault()
-              
-            navigate(`/tasks`)
-    }
 
-/*     const handleSave = (event) => {
-        event.preventDefault()
-        console.log("clicked!")
+        if (task.task && task.dateToComplete) {
+            const newTask = {
+                userId: currentUser,
+                task: task.task,
+                dateToComplete: task.dateToComplete,
+                completed: false,
+            }
 
-        const editedTask = {
-            id: task.id,
-            task: task.task,
-            dateToComplete: task.dateToComplete,
-            userId: task.userId,
+            createTask(newTask).then(() => {
+                navigate("/tasks")
+            })
+        } else {
+            window.alert("Please fill out ALL fields!")
         }
-
-        updateTask(editedTask).then(() => {
-            navigate(`/tasks/${currentUser.id}`)
-        })
     }
- */
+
     const handleInputChange = (event) => {
         const stateCopy = { ...task } /* spread operator will spread all of the details of the task object to make a copy */
         stateCopy[event.target.name] = event.target.value

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllTasks } from "../../services/taskService.jsx";
+import { getAllTasks, completeTask } from "../../services/taskService.jsx";
 import "./Tasks.css"
 import React from "react";
 import { Table } from "reactstrap";
@@ -9,23 +9,36 @@ import { useNavigate } from "react-router-dom";
 export const TaskList = ({ currentUser }) => {
     const [allTasks, setAllTasks] = useState([])
     const [completedTask, setCompletedTask] = useState(false)
+    const [count, setTaskCount] = useState(0)
 
     const navigate = useNavigate()
 
     const getAndSetTasks = () => {
         getAllTasks().then((taskArray) => {
-            const userTasks = taskArray.filter(task => task.userId === currentUser)
+            const userTasks = taskArray.filter(singleTask => singleTask.userId === currentUser && singleTask.completed === false)
             setAllTasks(userTasks)
         })
     }
 
     useEffect(() => {
         getAndSetTasks()
-        /* getAllTasks().then((taskArray) => {
-            setAllTasks(taskArray)
-    }) */
     }, [currentUser])
 
+    const handleCompletedTask = (taskId, userId, task, dateToComplete, completed) => {
+        const setTaskAsComplete = {
+            id: taskId,
+            userId: userId,
+            task: task,
+            dateToComplete: dateToComplete,
+            completed: completed,
+        }
+
+        completeTask(setTaskAsComplete).then(() => {
+            getAndSetTasks()
+        })
+    }
+
+    let numberCount = count
 
     return (
         <div className="fullPage">
@@ -33,29 +46,27 @@ export const TaskList = ({ currentUser }) => {
             <header className="task-info">
                 <h2>My Tasks</h2>
             </header>
-            <div className="task-table">
+            <div className="task">
                 <Table striped>
-                    <thead>
+                    <thead className="table-warning">
                         <tr>
-                            <th className="table-header">#</th>
-                            <th className="table-header">Task</th>
-                            <th className="table-header">Target Completion Date</th>
-                            <th className="table-header"></th>
+                            <th>#</th>
+                            <th>Task</th>
+                            <th>Target Completion Date</th>
+                            <th></th>
                         </tr>
                     </thead>
-                    <tbody className="task">
+                    <tbody className="table-dark">
                         {allTasks.map((task) => (
-                            <tr key={task.id} className="table-primary">
-                                <th scope="row" className="tasks-container">
-                                    {task.id}
+                            <tr key={task.id} className="task">
+                                <th scope="row" className="task">
+                                    {numberCount += 1}
                                 </th>
-                                <td className="tasks-container">{task.task}</td>
-                                <td>{task.dateToComplete}</td>
+                                <td className="task">{task.task}{/* <span className="edit-link-par">   ( <span className="edit-link">edit</span> )</span> */}</td>
+                                <td className="task">{task.dateToComplete}</td>
                                 <td>
                                     <button className="task-btn"
-                                            onClick={() => {
-                                            setCompletedTask(true)
-                                        }}
+                                            onClick={() => handleCompletedTask(task.id, task.userId, task.task, task.dateToComplete, true)}
                                     >
                                         Complete Task
                                     </button>
