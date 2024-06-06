@@ -11,5 +11,5 @@ export const ApplicationViews = () => {
     setCurrentUser(shellUserObject)
   }, [])
 
-  return <CustomerViews  currentUser={currentUser} />
+  return <CustomerViews currentUser={currentUser} />
 }

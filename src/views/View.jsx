@@ -1,5 +1,7 @@
 import { Outlet, Route, Routes } from "react-router-dom"
 import { Welcome } from "../components/welcome/Welcome.jsx"
+import { ArticleList } from "../components/articles/ArticleList.jsx"
+import { ArticleForm } from "../components/articles/ArticleForm.jsx"
 import { TaskList } from "../components/tasks/TaskList.jsx"
 import { TaskForm } from "../components/tasks/TaskForm.jsx"
 // import { CustomerNav } from "../components/nav/CustomerNav.jsx"
@@ -18,6 +20,10 @@ export const CustomerViews = ({ currentUser }) => {
                 }
             >
                 <Route index element={<Welcome />} />
+                <Route path ="articles">
+                    <Route index element={<ArticleList currentUser={currentUser} />} />
+                    <Route path=":create" element={<ArticleForm currentUser={currentUser} />} />
+                </Route>
                 <Route path="tasks">
                     <Route index element={<TaskList currentUser={currentUser} />} />
                     <Route path="create" element={<TaskForm currentUser={currentUser} />} />
