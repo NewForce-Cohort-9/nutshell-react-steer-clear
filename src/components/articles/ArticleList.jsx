@@ -40,7 +40,7 @@ export const ArticleList = ({ currentUser } ) => {
             <button
                     className="filter-btn btn-primary"
                     onClick={() => {
-                        navigate("/articles/newarticle")
+                        navigate("/articles/create")
                     }}
                 >
                     New Article
