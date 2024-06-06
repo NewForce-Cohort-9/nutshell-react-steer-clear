@@ -47,8 +47,8 @@ export const TaskList = ({ currentUser }) => {
                 <h2>My Tasks</h2>
             </header>
             <div className="task">
-                <Table striped>
-                    <thead className="table-warning">
+                <Table striped hover>
+                    <thead className="table-secondary">
                         <tr>
                             <th>#</th>
                             <th>Task</th>
