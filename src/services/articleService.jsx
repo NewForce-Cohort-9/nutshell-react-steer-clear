@@ -12,3 +12,9 @@ export const createArticle = (article) => {
         body: JSON.stringify(article),
     })
 }
+
+export const deleteArticle = (articleId) => {
+    return fetch (`http://localhost:8088/articles/${articleId}`, {
+        method: "DELETE",
+    })
+}

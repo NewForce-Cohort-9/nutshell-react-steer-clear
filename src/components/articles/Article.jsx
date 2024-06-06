@@ -1,6 +1,15 @@
 // author: Iris Lee purpose: to display an article
 
-export const Article = ({ article }) => {
+import { deleteArticle } from "../../services/articleService.jsx"
+
+export const Article = ({ article, getAndSetArticles}) => {
+
+    const handleDelete = () => {
+        deleteArticle(article.id).then(() => {
+            getAndSetArticles()
+        })
+    }
+
     return (
         <section className="article" >
             <header className="article-info">
@@ -11,6 +20,11 @@ export const Article = ({ article }) => {
             </div>
             <div>
                 {article.link}
+            </div>
+            <div className="btn-container">
+                <button className="btn btn-secondary" onClick={handleDelete}>
+                    Delete
+                </button>
             </div>
         </section>
     )

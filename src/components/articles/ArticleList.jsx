@@ -15,7 +15,7 @@ export const ArticleList = ({ currentUser } ) => {
         getAllArticles().then((articlesArray) => {
             const userArticlesArray = articlesArray.filter(
                 article => article.userId === currentUser
-            )
+            ).sort((a,b) => a.timeStamp > b.timeStamp ? -1 : 1)
             setUserArticles(userArticlesArray)
         })
     }
