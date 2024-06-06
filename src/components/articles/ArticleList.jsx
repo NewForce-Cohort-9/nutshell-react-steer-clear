@@ -22,7 +22,7 @@ export const ArticleList = ({ currentUser } ) => {
 
     useEffect(()=> {
         getAndSetArticles()
-    }, [currentUser, userArticles])
+    }, [currentUser])
 
     return (
         <div className="articles-container">

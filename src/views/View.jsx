@@ -21,7 +21,7 @@ export const CustomerViews = ({ currentUser }) => {
                 <Route index element={<Welcome />} />
                 <Route path ="articles">
                     <Route index element={<ArticleList currentUser={currentUser} />} />
-                    <Route path=":newarticle" element={<ArticleForm currentUser={currentUser} />} />
+                    <Route path=":create" element={<ArticleForm currentUser={currentUser} />} />
                 </Route>
                 {/* <Route 
                     path="tickets" 
