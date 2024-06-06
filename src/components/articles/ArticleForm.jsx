@@ -1,4 +1,4 @@
-//author: Iris Lee purpose: to process a new article or to edit a new article
+//author: Iris Lee purpose: to process a new article
 
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
