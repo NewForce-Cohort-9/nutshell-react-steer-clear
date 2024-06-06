@@ -6,17 +6,25 @@ import { Table } from "reactstrap";
 import { useNavigate } from "react-router-dom";
 
 
-export const TaskList = () => {
+export const TaskList = ({ currentUser }) => {
     const [allTasks, setAllTasks] = useState([])
     const [completedTask, setCompletedTask] = useState(false)
 
     const navigate = useNavigate()
 
-    useEffect(() => {
+    const getAndSetTasks = () => {
         getAllTasks().then((taskArray) => {
+            const userTasks = taskArray.filter(task => task.userId === currentUser)
+            setAllTasks(userTasks)
+        })
+    }
+
+    useEffect(() => {
+        getAndSetTasks()
+        /* getAllTasks().then((taskArray) => {
             setAllTasks(taskArray)
-    })
-    }, [])
+    }) */
+    }, [currentUser])
 
 
     return (
@@ -57,8 +65,8 @@ export const TaskList = () => {
                     </tbody>
                 </Table>
             </div>
-            <div>
-                <button className="form-btn"
+            <div className="btn-container-left">
+                <button className="form-btn btn-left"
                         onClick={() => {
                             navigate(`/tasks/create`)
                     }}
