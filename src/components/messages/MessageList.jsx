@@ -1,5 +1,6 @@
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, react } from "react"
+import { Button } from 'reactstrap'
 import { getAllMessages } from "../../services/messageService"
 
 
@@ -11,10 +12,16 @@ export const MessageList = ({currentUser}) => {
     getAllMessages().then((messages)=>{setAllMessages(messages)})
   }, [])
 
-  return <article className="messages"> Messages
+  return <article className="messages" > Current Messages:
       {allMessages.map(message => {
-        return <div><p>{message.message}</p></div>
+        return <div class=""><p>{message.timeStamp} {message.userId} {message.message}</p></div>
       })}
     </article>
   
 }
+
+export default (newMessage) => {
+  return (
+    <Button color="blue">New Message</Button>
+  );
+};
