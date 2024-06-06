@@ -1,8 +1,11 @@
 // author: Iris Lee purpose: to display an article
 
+import { useNavigate } from "react-router-dom"
 import { deleteArticle } from "../../services/articleService.jsx"
 
 export const Article = ({ article, getAndSetArticles}) => {
+
+    const navigate = useNavigate()
 
     const handleDelete = () => {
         deleteArticle(article.id).then(() => {
@@ -22,6 +25,14 @@ export const Article = ({ article, getAndSetArticles}) => {
                 {article.link}
             </div>
             <div className="btn-container">
+                 <button
+                    className="filter-btn btn-primary"
+                    onClick={() => {
+                        navigate(`/articles/edit/${article.id}`)
+                    }}
+                  >
+                    Edit
+                </button>                
                 <button className="btn btn-secondary" onClick={handleDelete}>
                     Delete
                 </button>
