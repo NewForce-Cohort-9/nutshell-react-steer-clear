@@ -14,7 +14,7 @@ export const MessageList = ({currentUser}) => {
 
   return <article className="messages" > Current Messages:
       {allMessages.map(message => {
-        return <div class=""><p>{message.timeStamp} {message.userId} {message.message}</p></div>
+        return <div className=""><p>{message.timeStamp} {message.userId} {message.message}</p></div>
       })}
     </article>
   
