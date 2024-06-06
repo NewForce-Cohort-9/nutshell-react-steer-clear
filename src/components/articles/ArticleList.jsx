@@ -44,7 +44,7 @@ export const ArticleList = ({ currentUser } ) => {
                     }}
                 >
                     New Article
-                </button>
+            </button>
         </div>
     )
 }
