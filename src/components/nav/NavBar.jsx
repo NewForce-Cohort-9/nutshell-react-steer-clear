@@ -1,3 +1,5 @@
+// Author: Iris Lee Purpose: Nav Bar
+
 import React, { useState } from 'react';
 
 import {
