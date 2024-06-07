@@ -1,4 +1,4 @@
-// author: Iris Lee purpose: to list all saved articles for user
+// author: Caila Linger
 
 import { useEffect, useState } from "react"
 import { getAllEvents } from "../../services/eventService.jsx"

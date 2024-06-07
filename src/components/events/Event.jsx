@@ -1,4 +1,5 @@
 //author: Caila Linger this will delete events
+
 import { deleteEvent } from "../../services/eventService.jsx"
 
 export const Event = ({ event, getAndSetEvents}) => {
