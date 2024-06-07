@@ -18,3 +18,18 @@ export const deleteEvent = (eventId) => {
         method: "DELETE",
     })
 }
+
+export const updateEvent = (event) => {
+    return fetch(`http://localhost:8088/events/${event.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(event)
+    })
+}
+
+export const getEventById = (eventId) => {
+    return fetch(`http://localhost:8088/events/${eventId}`)
+    .then((res) => res.json())
+}

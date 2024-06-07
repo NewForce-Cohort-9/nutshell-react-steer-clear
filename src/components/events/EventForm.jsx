@@ -1,4 +1,4 @@
-//author: Caila Linger this will show events
+//author: Caila Linger this will add new events
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { createEvent } from "../../services/eventService.jsx"
