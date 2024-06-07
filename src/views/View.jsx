@@ -2,13 +2,10 @@ import { Outlet, Route, Routes } from "react-router-dom"
 import { Welcome } from "../components/welcome/Welcome.jsx"
 import { ArticleList } from "../components/articles/ArticleList.jsx"
 import { ArticleForm } from "../components/articles/ArticleForm.jsx"
-<<<<<<< HEAD
 import { MessageList } from "../components/messages/MessageList.jsx"
 import { MessageForm } from "../components/messages/MessageForm.jsx"
 
-=======
 import { ArticleEditForm } from "../components/articles/ArticleEditForm.jsx"
->>>>>>> main
 import { NavBar } from "../components/nav/NavBar.jsx"
 // import { CustomerNav } from "../components/nav/CustomerNav.jsx"
 // import { TicketList } from "../components/tickets/TicketList.jsx"
