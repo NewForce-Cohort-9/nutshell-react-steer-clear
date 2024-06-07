@@ -5,9 +5,8 @@ export const Welcome = () => {
         <div className="welcome-container">
             <h1>
                 <span>Welcome to</span>
-                <span>Honey Rae Repair Shop</span>
+                <span>Nutshell</span>
             </h1>
-            <div>Your one-stop shop to get all your electronics fixed</div>
         </div>
     )
 }
