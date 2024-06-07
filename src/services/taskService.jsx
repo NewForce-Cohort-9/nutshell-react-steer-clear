@@ -25,3 +25,18 @@ export const completeTask = (task) => {
         body: JSON.stringify(task),
     })
 }
+
+export const editTask = (task) => {
+    return fetch(`http://localhost:8088/tasks/${task.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(task),
+    })
+}
+
+export const getTaskById = (taskId) => {
+    return fetch(`http://localhost:8088/tasks/${taskId}`)
+    .then((res) => res.json())
+}

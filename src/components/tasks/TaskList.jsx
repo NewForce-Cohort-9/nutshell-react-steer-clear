@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAllTasks, completeTask } from "../../services/taskService.jsx";
+import { getAllTasks, completeTask, editTask } from "../../services/taskService.jsx";
 import "./Tasks.css"
 import React from "react";
 import { Table } from "reactstrap";
@@ -62,7 +62,14 @@ export const TaskList = ({ currentUser }) => {
                                 <th scope="row" className="task">
                                     {numberCount += 1}
                                 </th>
-                                <td className="task">{task.task}{/* <span className="edit-link-par">   ( <span className="edit-link">edit</span> )</span> */}</td>
+                                <td className="task">{task.task}
+                                    {<span className="edit-link-par"
+                                            onClick={() => {
+                                                navigate(`/tasks/edit/${task.id}`)
+                                            }}
+                                            >   
+                                            ( <span className="edit-link" >edit</span> )</span>}
+                                </td>
                                 <td className="task">{task.dateToComplete}</td>
                                 <td>
                                     <button className="task-btn"
