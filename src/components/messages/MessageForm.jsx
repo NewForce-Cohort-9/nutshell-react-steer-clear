@@ -1,42 +1,22 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import { createMessage } from "../../services/messageService.jsx"
-
-export const MessageCard = ({message, currentUser, resetState}) => {
-
-    const [users, setUsers] = useState([])
-    const [assignedUser, setAssignedUser] = useState({})
-
-    useEffect(() => {
-        getAllUsers().then(userMessages => {
-          setUsers(userMessages)
-        })
-    }, [])
-
-
-    useEffect(() => {
-        const foundUser = users.find((user) => {      
-          return user.id === message?.userMessages[0]?.userId});
-        
-        setAssignedUser(foundUser)
-    }, [users, message]) 
-}
+import { createNewMessage } from "./Message"
 
 export const MessageForm = ({ currentUser }) => {
-  const [message, createNewMessage] = useState({task: "", dateToComplete: ""})
+  const [message, createMessage] = useState({message: ""})
 
   const navigate = useNavigate()
 
   const handleSave = (event) => {
       event.preventDefault()
 
-      if (message.message && message.dateToComplete) {
-          const newTask = {
+      if (message.message) {
+          const newMessage = {
               userId: currentUser,
               message: message.message,
           }
 
-          createTask(newMessage).then(() => {
+          createNewMessage(newMessage).then(() => {
               navigate("/messages")
           })
       } else {
@@ -47,7 +27,7 @@ export const MessageForm = ({ currentUser }) => {
   const handleInputChange = (event) => {
       const stateCopy = { ...message } 
       stateCopy[event.target.name] = event.target.value
-      setMessage(stateCopy)
+      createMessage(stateCopy)
   }
 
   return (
@@ -59,11 +39,10 @@ export const MessageForm = ({ currentUser }) => {
                   <input 
                       type="text"
                       name="message"
-                      value={message?.message ? message.message : ""}
+                      value={message?.message}
                       onChange={handleInputChange}
                       required
-                      className="form-control"
-                      />
+                      className="form-control"/>
               </div>
               <div className="form-group">
                   <button className="form-btn btn-primary" 

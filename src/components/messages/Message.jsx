@@ -9,7 +9,7 @@ export const getMessagesByUser = () => {
 }
 
 export const createNewMessage = (newMessage) => {
-    return fetch(`http://localhost:8088/userMessages`, {
+    return fetch(`http://localhost:8088/messages`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -20,7 +20,7 @@ export const createNewMessage = (newMessage) => {
 
 
 export const editMessage = (message) => {
-    return fetch(`http://localhost:8088/userMessages/${message.id}`, {
+    return fetch(`http://localhost:8088/messages/${message.id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
