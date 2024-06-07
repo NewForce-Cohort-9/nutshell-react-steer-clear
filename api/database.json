@@ -73,6 +73,17 @@
       "link": "https://www.food.com/recipe/perfect-pasta-salad-27221"
     },
     {
+<<<<<<< HEAD
+=======
+      "userId": 6,
+      "id": 6,
+      "title": "Cat Photos BEFORE the Internet",
+      "synopsis": "cat pics!!!!",
+      "timeStamp": "2024-06-06T15:37:42.452Z",
+      "link": "https://azphotoalliance.org/cat-photos-before-the-internet/"
+    },
+    {
+>>>>>>> main
       "id": 7,
       "userId": 5,
       "title": "Yes, There Really Is Such A Thing As A Friendly Ghost",
@@ -87,6 +98,14 @@
       "synopsis": "Proof that a pond is just a big soup outside.",
       "timeStamp": "3/5/2024",
       "link": "https://www.nhm.ac.uk/discover/pond-life-facts-about-habitats-plants-animals.html"
+    },
+    {
+      "userId": 6,
+      "id": 9,
+      "title": "asdf",
+      "synopsis": "asdf",
+      "timeStamp": "2024-06-06T19:02:04.936Z",
+      "link": "asdf"
     }
   ],
   "messages": [
