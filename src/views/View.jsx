@@ -10,6 +10,8 @@ import { TaskList } from "../components/tasks/TaskList.jsx"
 import { TaskForm } from "../components/tasks/TaskForm.jsx"
 import { EditTask } from "../components/tasks/EditTask.jsx"
 import { NavBar } from "../components/nav/NavBar.jsx"
+import { MessageList } from "../components/messages/MessageList.jsx"
+import { MessageForm } from "../components/messages/MessageForm.jsx"
 
 
 
@@ -52,6 +54,9 @@ export const CustomerViews = ({ currentUser }) => {
                 </Route>
 
             </Route>
+
+            <Route path="messages" element={<MessageList/>}/>
+            <Route path=":create" element={<MessageForm currentUser={currentUser} />} />
         </Routes>
     )
 }

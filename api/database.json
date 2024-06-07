@@ -110,37 +110,47 @@
       "id": 1,
       "userId": 1,
       "message": "Hi, I'm Ruston Sr!",
-      "timeStamp": "2024-05-24T19:56:15.268Z"
+      "timeStamp": "5/30/2024 at 6:17pm"
     },
     {
       "id": 2,
       "userId": 2,
       "message": "Hi, I'm Ruston II",
-      "timeStamp": "2024-05-24T19:57:15.268Z"
+      "timeStamp": "5/28/2024 at 9:30am"
     },
     {
       "id": 3,
       "userId": 3,
       "message": "Hello, I'm Ruston Jr",
-      "timeStamp": "2024-05-24T19:58:15.268Z"
+      "timeStamp": "5/22/2024 at 8:16pm"
     },
     {
       "id": 4,
       "userId": 4,
       "message": "Hey guys! I'm Rust!",
-      "timeStamp": "2024-05-24T19:59:15.268Z"
+      "timeStamp": "6/6/2024 at 4:16pm"
     },
     {
       "id": 5,
       "userId": 5,
       "message": "This is Rusty!",
-      "timeStamp": "2024-05-24T20:56:15.268Z"
+      "timeStamp": "6/2/2024 at 3:20am"
     },
     {
       "id": 6,
       "userId": 6,
       "message": "Hey I'm Ruston!",
-      "timeStamp": "2024-05-24T20:58:15.268Z"
+      "timeStamp": "5/2/2024 at 7:00pm"
+    },
+    {
+      "userId": 6,
+      "message": "Test",
+      "id": 7
+    },
+    {
+      "userId": 6,
+      "message": "hi",
+      "id": 8
     }
   ],
   "events": [
