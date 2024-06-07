@@ -1,4 +1,4 @@
-// author: Caila Linger
+// author: Caila Linger get all the events
 
 import { useEffect, useState } from "react"
 import { getAllEvents } from "../../services/eventService.jsx"

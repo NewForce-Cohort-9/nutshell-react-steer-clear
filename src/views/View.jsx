@@ -4,6 +4,7 @@ import { ArticleList } from "../components/articles/ArticleList.jsx"
 import { ArticleForm } from "../components/articles/ArticleForm.jsx"
 import { EventList } from "../components/events/EventList.jsx"
 import { EventForm } from "../components/events/EventForm.jsx"
+import { EventEditForm } from "../components/events/EventEditForm.jsx"
 import { ArticleEditForm } from "../components/articles/ArticleEditForm.jsx"
 import { TaskList } from "../components/tasks/TaskList.jsx"
 import { TaskForm } from "../components/tasks/TaskForm.jsx"
@@ -41,6 +42,7 @@ export const CustomerViews = ({ currentUser }) => {
                 <Route path ="events">
                     <Route index element={<EventList currentUser={currentUser} />} />
                     <Route path=":create" element={<EventForm currentUser={currentUser} />} />
+                    <Route path="edit/:eventId" element={<EventEditForm currentUser={currentUser} />} />
                 </Route>
 
                 <Route path="tasks">

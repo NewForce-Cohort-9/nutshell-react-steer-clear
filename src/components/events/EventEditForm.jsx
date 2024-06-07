@@ -14,7 +14,7 @@ export const EventEditForm = ({ currentUser }) => {
 
     useEffect (() => {
         getEventById(eventId).then((eventObj) => {
-            setCurrentArticle(eventObj)
+            setCurrentEvent(eventObj)
         })
     }, [])
 
@@ -52,7 +52,7 @@ export const EventEditForm = ({ currentUser }) => {
                         <input
                             type="text"
                             className="form-control"
-                            name="title"
+                            name="event"
                             value={currentEvent.event}
                             onChange={handleInputChange}
                         />
@@ -65,7 +65,7 @@ export const EventEditForm = ({ currentUser }) => {
                         <input
                             type="date"
                             className="form-control"
-                            name="synopsis"
+                            name="date"
                             value={currentEvent.date}
                             onChange={handleInputChange}
                         />
@@ -78,7 +78,7 @@ export const EventEditForm = ({ currentUser }) => {
                         <input
                             type="text"
                             className="form-control"
-                            name="link"
+                            name="location"
                             value={currentEvent.location}
                             onChange={handleInputChange}
                         />

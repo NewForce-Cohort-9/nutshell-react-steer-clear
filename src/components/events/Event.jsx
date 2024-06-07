@@ -1,8 +1,11 @@
-//author: Caila Linger this will delete events
+//author: Caila Linger this will show events
 
 import { deleteEvent } from "../../services/eventService.jsx"
+import { useNavigate } from "react-router-dom"
 
 export const Event = ({ event, getAndSetEvents}) => {
+
+    const navigate = useNavigate()
 
     const handleDelete = () => {
         deleteEvent(event.id).then(() => {
@@ -22,6 +25,12 @@ export const Event = ({ event, getAndSetEvents}) => {
                 {event.location}
             </div>
             <div className="btn-container">
+                <button className="filter-btn btn-primary" 
+                onClick={() => {
+                    navigate(`/events/edit/${event.id}`)
+                }}>
+                    Edit
+                </button>
                 <button className="btn btn-secondary" onClick={handleDelete}>
                     Delete
                 </button>
