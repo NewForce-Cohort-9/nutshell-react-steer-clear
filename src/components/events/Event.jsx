@@ -1,4 +1,4 @@
-
+//author: Caila Linger this will delete events
 import { deleteEvent } from "../../services/eventService.jsx"
 
 export const Event = ({ event, getAndSetEvents}) => {
@@ -12,13 +12,13 @@ export const Event = ({ event, getAndSetEvents}) => {
     return (
         <section className="event" >
             <header className="event-info">
-                {event.title}
+                {event.event}
             </header>
             <div>
-                {event.synopsis}
+                {event.date}
             </div>
             <div>
-                {event.link}
+                {event.location}
             </div>
             <div className="btn-container">
                 <button className="btn btn-secondary" onClick={handleDelete}>

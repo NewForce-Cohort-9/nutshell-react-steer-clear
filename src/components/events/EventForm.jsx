@@ -1,5 +1,4 @@
-//author: Iris Lee purpose: to process a new article or to edit a new article
-
+//author: Caila Linger this will show events
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { createEvent } from "../../services/eventService.jsx"
