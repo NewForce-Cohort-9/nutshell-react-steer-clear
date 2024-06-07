@@ -138,7 +138,7 @@ fieldset {
 .fullPage {
   width: 94vw;
   height: 95vw;
-  background-image: url("https://www.pngkey.com/png/full/78-788276_shia-labeouf-png.png") ;
+  background-image: url("src/components/tasks/taskimages/rustonLebeouf.png");
   background-repeat: no-repeat;
   background-position: top right;
 }
