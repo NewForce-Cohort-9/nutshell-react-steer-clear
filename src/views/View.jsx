@@ -5,6 +5,7 @@ import { ArticleForm } from "../components/articles/ArticleForm.jsx"
 import { ArticleEditForm } from "../components/articles/ArticleEditForm.jsx"
 import { TaskList } from "../components/tasks/TaskList.jsx"
 import { TaskForm } from "../components/tasks/TaskForm.jsx"
+import { NavBar } from "../components/nav/NavBar.jsx"
 // import { CustomerNav } from "../components/nav/CustomerNav.jsx"
 
 
@@ -15,7 +16,7 @@ export const CustomerViews = ({ currentUser }) => {
                 path="/"
                 element={
                     <>
-
+                        <NavBar />
                         <Outlet />
                     </>
                 }
