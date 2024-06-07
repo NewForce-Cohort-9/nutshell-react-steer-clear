@@ -73,8 +73,6 @@
       "link": "https://www.food.com/recipe/perfect-pasta-salad-27221"
     },
     {
-<<<<<<< HEAD
-=======
       "userId": 6,
       "id": 6,
       "title": "Cat Photos BEFORE the Internet",
@@ -83,7 +81,6 @@
       "link": "https://azphotoalliance.org/cat-photos-before-the-internet/"
     },
     {
->>>>>>> main
       "id": 7,
       "userId": 5,
       "title": "Yes, There Really Is Such A Thing As A Friendly Ghost",
@@ -273,6 +270,13 @@
       "userId": 1,
       "task": "Take my next holiday in Kyoto",
       "dateToComplete": "September 5",
+      "completed": false
+    },
+    {
+      "id": 13,
+      "userId": 6,
+      "task": "Rescue 3 cats by Christmas",
+      "dateToComplete": "December 25",
       "completed": false
     }
   ],
