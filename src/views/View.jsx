@@ -4,6 +4,8 @@ import { ArticleList } from "../components/articles/ArticleList.jsx"
 import { ArticleForm } from "../components/articles/ArticleForm.jsx"
 import { MessageList } from "../components/messages/MessageList.jsx"
 import { MessageForm } from "../components/messages/MessageForm.jsx"
+import { EventList } from "../components/events/EventList.jsx"
+import { EventForm } from "../components/events/EventForm.jsx"
 import { ArticleEditForm } from "../components/articles/ArticleEditForm.jsx"
 import { NavBar } from "../components/nav/NavBar.jsx"
 // import { CustomerNav } from "../components/nav/CustomerNav.jsx"
@@ -34,6 +36,10 @@ export const CustomerViews = ({ currentUser }) => {
                     element={<ArticleEditForm currentUser={currentUser} />} 
                     />
                 </Route>
+                <Route path ="events">
+                    <Route index element={<EventList currentUser={currentUser} />} />
+                    <Route path=":create" element={<EventForm currentUser={currentUser} />} />
+                </Route>
 
                 {/* <Route 
                     path="tickets" 
@@ -41,6 +47,10 @@ export const CustomerViews = ({ currentUser }) => {
                     <Route index element={<TicketList currentUser={currentUser} />} />
                     <Route path="create" element={<TicketForm currentUser={currentUser} />} />
                 </Route> */}
+                <Route path="tasks">
+                    <Route index element={<TaskList currentUser={currentUser} />} />
+                    <Route path="create" element={<TaskForm currentUser={currentUser} />} />
+                </Route>
             </Route>
 
             <Route path="messages" element={<MessageList/>}/>
