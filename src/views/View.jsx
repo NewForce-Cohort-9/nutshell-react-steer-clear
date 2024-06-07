@@ -35,8 +35,6 @@ export const CustomerViews = ({ currentUser }) => {
                     element={<ArticleEditForm currentUser={currentUser} />} 
                     />
                 </Route>
-<<<<<<< HEAD
-=======
 
                 {/* <Route 
                     path="tickets" 
@@ -44,7 +42,6 @@ export const CustomerViews = ({ currentUser }) => {
                     <Route index element={<TicketList currentUser={currentUser} />} />
                     <Route path="create" element={<TicketForm currentUser={currentUser} />} />
                 </Route> */}
->>>>>>> main
             </Route>
 
             <Route path="messages" element={<MessageList/>}/>
