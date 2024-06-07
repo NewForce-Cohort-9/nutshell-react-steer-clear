@@ -4,22 +4,22 @@ import { useNavigate } from "react-router-dom"
 import { createEvent } from "../../services/eventService.jsx"
 
 export const EventForm = ({ currentUser }) => {
-    const [event, setEvent] = useState({event: "", date: "", location: ""})
+    const [newEvent, setEvent] = useState({event: "", date: "", location: ""})
 
     const navigate = useNavigate()
 
     const handleSave = (event) => {
         event.preventDefault()
 
-        if (event.event && event.date && event.location) {
-            const newEvent = {
+        if (newEvent.event && newEvent.date && newEvent.location) {
+            const currentEvent = {
                 userId: currentUser,
-                event: event.event,
-                date: event.date,
-                location: event.location,
+                event: newEvent.event,
+                date: newEvent.date,
+                location: newEvent.location,
             }
 
-            createEvent(newEvent).then(() => {
+            createEvent(currentEvent).then(() => {
                 navigate("/events")
             })
         } else {
@@ -38,7 +38,7 @@ export const EventForm = ({ currentUser }) => {
                             className="form-control"
                             placeholder="event"
                             onChange={(event) => {
-                                const eventCopy = {...event }
+                                const eventCopy = {...newEvent }
                                 eventCopy.event = event.target.value
                                 setEvent(eventCopy)
                             }}
@@ -54,7 +54,7 @@ export const EventForm = ({ currentUser }) => {
                             className="form-control"
                             placeholder="date of event"
                             onChange={(event) => {
-                                const eventCopy = {...event }
+                                const eventCopy = {...newEvent }
                                 eventCopy.date = event.target.value
                                 setEvent(eventCopy)
                             }}
@@ -70,7 +70,7 @@ export const EventForm = ({ currentUser }) => {
                             className="form-control"
                             placeholder="location of event"
                             onChange={(event) => {
-                                const eventCopy = {...event }
+                                const eventCopy = {...newEvent }
                                 eventCopy.location = event.target.value
                                 setEvent(eventCopy)
                             }}
@@ -81,7 +81,7 @@ export const EventForm = ({ currentUser }) => {
             <fieldset>
                 <div className="form-group">
                     <button className="form-btn btn-info"
-                        onClick={handleSave}
+                        onClick={()=>{handleSave(event)}}
                     >
                         Create Event
                     </button>

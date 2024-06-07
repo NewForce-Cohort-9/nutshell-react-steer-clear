@@ -185,6 +185,13 @@
       "date": "08/15/2024",
       "location": "The vineyard",
       "userId": 6
+    },
+    {
+      "userId": 6,
+      "event": "g",
+      "date": "2024-02-07",
+      "location": "j",
+      "id": 7
     }
   ],
   "tasks": [
