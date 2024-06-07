@@ -271,6 +271,13 @@
       "task": "Take my next holiday in Kyoto",
       "dateToComplete": "September 5",
       "completed": false
+    },
+    {
+      "id": 13,
+      "userId": 6,
+      "task": "Rescue 3 cats by Christmas",
+      "dateToComplete": "December 25",
+      "completed": false
     }
   ],
   "images": [],

@@ -5,9 +5,10 @@ import { ArticleForm } from "../components/articles/ArticleForm.jsx"
 import { EventList } from "../components/events/EventList.jsx"
 import { EventForm } from "../components/events/EventForm.jsx"
 import { ArticleEditForm } from "../components/articles/ArticleEditForm.jsx"
+import { TaskList } from "../components/tasks/TaskList.jsx"
+import { TaskForm } from "../components/tasks/TaskForm.jsx"
 // import { CustomerNav } from "../components/nav/CustomerNav.jsx"
-// import { TicketList } from "../components/tickets/TicketList.jsx"
-// import { TicketForm } from "../components/forms/TicketForm.jsx"
+
 
 export const CustomerViews = ({ currentUser }) => {
     return (
@@ -44,6 +45,10 @@ export const CustomerViews = ({ currentUser }) => {
                     <Route index element={<TicketList currentUser={currentUser} />} />
                     <Route path="create" element={<TicketForm currentUser={currentUser} />} />
                 </Route> */}
+                <Route path="tasks">
+                    <Route index element={<TaskList currentUser={currentUser} />} />
+                    <Route path="create" element={<TaskForm currentUser={currentUser} />} />
+                </Route>
             </Route>
         </Routes>
     )
