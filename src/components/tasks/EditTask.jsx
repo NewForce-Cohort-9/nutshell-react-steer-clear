@@ -1,33 +1,35 @@
 import { useEffect, useState } from "react"
 import "./Tasks.css"
-import { useNavigate } from "react-router-dom"
-import { createTask } from "../../services/taskService.jsx"
+import { useNavigate, useParams } from "react-router-dom"
+import { editTask, getTaskById } from "../../services/taskService.jsx"
 
-export const TaskForm = ({ currentUser }) => {
+export const EditTask = ({ currentUser }) => {
     const [task, setTask] = useState({task: "", dateToComplete: ""})
+
+    const {taskId} = useParams()
 
     const navigate = useNavigate()
 
-   /*  useEffect(() => {
-        getTaskById(currentUser.id).then(data => {
-            const taskObj = data[0]
-            setTask(taskObj)
+    useEffect (() => {
+        getTaskById(taskId).then((task) => {
+            setTask(task)
         })
-    }, [currentUser]) */
+    }, [])
 
 
-    const handleSave = (event) => {
+    const handleEdit = (event) => {
         event.preventDefault()
 
         if (task.task && task.dateToComplete) {
-            const newTask = {
+            const editedTask = {
+                id: task.id,
                 userId: currentUser,
                 task: task.task,
                 dateToComplete: task.dateToComplete,
                 completed: false,
             }
 
-            createTask(newTask).then(() => {
+            editTask(editedTask).then(() => {
                 navigate("/tasks")
             })
         } else {
@@ -43,7 +45,7 @@ export const TaskForm = ({ currentUser }) => {
 
     return (
         <form className="profile">
-            <h2>Create A New Task</h2>
+            <h2>Edit Your Task</h2>
             <fieldset>
                 <div className="form-group">
                     <label>Task:</label>
@@ -73,7 +75,7 @@ export const TaskForm = ({ currentUser }) => {
             <fieldset>
                 <div className="form-group">
                     <button className="form-btn btn-primary" 
-                    onClick={handleSave}>Save</button>
+                    onClick={handleEdit}>Update</button>
                 </div>
             </fieldset>
         </form>
